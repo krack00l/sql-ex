@@ -1,3 +1,4 @@
 # sql-ex
 sql tasks
-First 34 SQL exercise from website sql-ex.ru
+The first 34 exercises from the site sql-ex.ru
+
