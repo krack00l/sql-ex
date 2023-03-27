@@ -1,0 +1,7 @@
+SELECT maker
+FROM Product, PC
+WHERE speed >= 750 AND PC.model = Product.model
+INTERSECT 
+SElECT maker
+FROM Product, Laptop
+WHERE speed >= 750 AND Laptop.model = Product.model

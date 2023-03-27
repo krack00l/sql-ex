@@ -1,0 +1,4 @@
+SELECT DISTINCT maker, price
+FROM Product, Printer
+WHERE price = (SELECT MIN(price) FROM Printer WHERE color = 'y') AND color = 'y'
+      AND Printer.model = Product.model

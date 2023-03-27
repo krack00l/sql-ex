@@ -1,0 +1,6 @@
+SELECT maker, AVG(hd)
+FROM Product INNER JOIN PC ON PC.model = Product.model
+WHERE maker IN (SELECT DISTINCT maker FROM Product WHERE type = 'Printer'
+INTERSECT
+SELECT DISTINCT maker FROM Product, PC WHERE Pc.model = Product.model)
+GROUP BY maker

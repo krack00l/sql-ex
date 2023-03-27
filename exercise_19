@@ -1,0 +1,4 @@
+SELECT maker, AVG(screen) AS Avg_screen
+FROM Product, Laptop
+WHERE Product.model = Laptop.model
+GROUP BY maker
