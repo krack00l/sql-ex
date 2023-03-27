@@ -1,0 +1,3 @@
+SELECT o.ship 
+FROM Battles AS b LEFT join outcomes AS o ON o.battle = b.name
+WHERE b.name = 'North Atlantic' AND o.result = 'sunk'

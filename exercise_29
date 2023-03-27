@@ -1,0 +1,6 @@
+SELECT t1.point, t1.date, inc, out
+FROM Income_o AS t1 LEFT JOIN Outcome_o t2 ON t1.point = t2.point AND t1.date = t2.date
+UNION
+SELECT t2.point, t2.date, inc, out
+FROM Income_o AS t1 RIGHT JOIN Outcome_o AS t2 ON t1.point = t2.point AND t1.date = t2.date
+
